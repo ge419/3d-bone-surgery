@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import ButtonLogin from "../Button/ButtonLogin";
+import ButtonSignUp from "../Button/ButtonSignUp";
 
 const Nav = () => {
   return (
@@ -29,7 +31,9 @@ const Nav = () => {
         </ul>
         <div className="flex items-center space-x-2 md:space-x-5">
           {/* 로그인 */}
+          <ButtonLogin text="로그인" />
           {/* 회원가입 */}
+          <ButtonSignUp text="회원가입" />
         </div>
       </div>
     </div>
