@@ -2,8 +2,13 @@ import Link from "next/link";
 import React from "react";
 import ButtonLogin from "../Button/ButtonLogin";
 import ButtonSignUp from "../Button/ButtonSignUp";
+import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";
 
-const Nav = () => {
+interface Props {
+  openNav: () => void;
+}
+
+const Nav = ({ openNav }: Props) => {
   return (
     <div className="h-[12h] bg-white shadow-md">
       <div className="w-[85%] flex item-center justify-between mx-auto h-[12vh]">
@@ -34,6 +39,10 @@ const Nav = () => {
           <ButtonLogin text="로그인" />
           {/* 회원가입 */}
           <ButtonSignUp text="회원가입" />
+          <Bars3BottomRightIcon
+            onClick={openNav}
+            className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer"
+          />
         </div>
       </div>
     </div>
