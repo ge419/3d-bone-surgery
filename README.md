@@ -6,6 +6,7 @@ TO DO:
 4. 이메일 기능, 파일 업로드도 가능하게
 5. 유트브 embeding?
 6. 네비게이션
+7. 3d rendering images https://www.youtube.com/watch?app=desktop&v=wxvSHOrBHbw
 
 almuderis.com.au
 참고해서 자기소개 페이지
