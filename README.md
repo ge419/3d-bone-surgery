@@ -13,6 +13,21 @@ almuderis.com.au
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Site Map
+1) Home (About 간단하게 연결되도록, News 업데이트 보이게, 간략하게 맨 밑에 for patient for professional inquery 버튼)
+2) About - dr hyun guy kang (CV, 업적, 논문, 보도자료 페이지)
+      - Orthopedics Oncology (암 수술 장면, 요약 등 페이지)
+      - 3d bone implant (3d 임플란트 페이지 3d rendering 써볼 예정)
+          - patient와 doctor를 위한 email 의뢰 inquery 페이지
+      - Amputation? (사진과 설명, 특허 정도)
+3) For Patients - 의뢰 디자인 검사 수술 프로세스 설명 페이지
+              - 수술 의뢰 이메일 페이지 (파일첨부 가능하게)
+4) For Professional - 콜라보 inquery? 이메일?
+5) News 
+6) Blog (네이버 카페 만들어서 연동시킬 예정)
+
+
+
 ## Getting Started
 
 First, run the development server:
