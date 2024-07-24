@@ -5,7 +5,11 @@ import React from "react";
 import ResponsiveNav from "../components/Navigation/ResponsiveNav";
 
 // const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({ weight: ["400", "500", "600"], subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+})
+
 
 export const metadata: Metadata = {
   title: "3D Bone Surgery",
