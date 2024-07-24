@@ -1,12 +1,15 @@
 import React from "react";
-import About from "./About/About";
+
 import Features from "./Features/Features";
+import About from "../app/about/page";
 
 const Home = () => {
-  return <div>
-    <About/>
-    <Features/>
-  </div>;
+  return (
+    <div>
+      <About />
+      <Features />
+    </div>
+  );
 };
 
 export default Home;
