@@ -1,3 +1,15 @@
+TO DO:
+
+1. 로그인과 데이터베이스
+2. 뉴스배너 admin이 업로드 가능하게
+3. get intouch page에 지도, 이메일
+4. 이메일 기능, 파일 업로드도 가능하게
+5. 유트브 embeding?
+6. 네비게이션
+
+almuderis.com.au
+참고해서 자기소개 페이지
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
