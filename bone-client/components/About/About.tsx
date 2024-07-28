@@ -21,7 +21,6 @@ const About = () => {
                     With a visionary approach to medicine, Dr. Kang is redefining cancer treatment possibilities.
                     His pioneering work in minimally invasive surgery for bone metastasis and 3D printing technology for bone reconstruction has set new standards in the medical field,
                     establishing him as an innovator and leader in surgical techniques.
-                    
                 </p>
                 <div className='flex items-center space-x-4 md:space-x-6 mt-[1rem]'>
                         <ButtonBlue text='Learn More about Prof. Kangs work'/>
