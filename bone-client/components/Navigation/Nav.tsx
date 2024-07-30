@@ -25,13 +25,16 @@ const Nav = ({ openNav }: Props) => {
             <Link href="/about">About</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/bone1">Bone1</Link>
+            <Link href="/For_Patients">For Patients</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/bone2">Bone2</Link>
+            <Link href="/For_Professional">For Professional</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/bone3">Bone3</Link>
+            <Link href="/News">News</Link>
+          </li>
+          <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
+            <Link href="/bone3">Blog</Link>{/* 외부링크 네이버 카페 예정*/}
           </li>
         </ul>
         <div className="flex items-center space-x-2 md:space-x-5">
