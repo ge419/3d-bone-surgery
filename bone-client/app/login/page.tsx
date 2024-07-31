@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { FormEvent, useEffect, useState } from "react";
 
 function Login() {
-  return <div>Login</div>;
+  return <Login />;
 }
 
 export default Login;

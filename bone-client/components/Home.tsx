@@ -1,12 +1,12 @@
 import React from "react";
 
 import Features from "./Features/Features";
-import About_Brief from "./About/AboutBrief";
+import AboutBrief from "./About/AboutBrief";
 
 const Home = () => {
   return (
     <div>
-      <About_Brief />
+      <AboutBrief />
       <Features />
     </div>
   );
