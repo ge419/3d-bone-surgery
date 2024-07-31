@@ -11,7 +11,7 @@ import Icon3 from '@/public/images/icon3.png'
 const About_Brief = () => {
   return (
     <div>
-        <div className='h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] flex items-center flex-col justify-center'>
+        <div className='h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] items-center flex flex-col justify-center'>
             <div className='grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto'>
                 <div className='col-span-4'>
                     <h1 className='text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]'>
@@ -33,20 +33,20 @@ const About_Brief = () => {
 
         <div className='pt-[1rem] pb-[3rem]'>
             <SectionHeading headingMini='Ideal MJ' headingPrimary='Our Speciality'/>
-        <div className='pt-[3rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[1.4rem]'>
-            <div>
-                <FeatureCard title="3D implant" image={Icon1.src} info='Designed 3d titatnium implant'/>
+            <div className='pt-[1rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[1.4rem]'>
+                <div>
+                    <FeatureCard title="3D implant" image={Icon1.src} info='Designed 3d titatnium implant'/>
+                </div>
+                <div>
+                    <FeatureCard title="Oncology" image={Icon2.src} info='more than 1000 cases'/>
+                </div>
+                <div>
+                    <FeatureCard title="Amputation" image={Icon3.src} info ='FDA approved amputation design'/>
+                </div>
             </div>
-            <div>
-                <FeatureCard title="Oncology" image={Icon2.src} info='more than 1000 cases'/>
-            </div>
-            <div>
-                <FeatureCard title="Amputation" image={Icon3.src} info ='FDA approved amputation design'/>
-            </div>
-        </div>
         </div>
 
-        <div className='h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] flex items-center flex-col justify-center'>
+        <div className='h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] items-center flex-col justify-center'>
             <div className='grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto'>
                 <div className='col-span-2'>
                     <h1 className='text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]'>
@@ -70,7 +70,8 @@ const About_Brief = () => {
                 </div>
             </div>
         </div>
-        <div className='h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] flex items-center flex-col justify-center'>
+
+        <div className='h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] items-center flex-col justify-center'>
             <div className='grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto'>
                 <div className='col-span-2 hidden sm:block mt-[2rem]'>
                     <Image src={HeroImg} alt="Hero"/>
