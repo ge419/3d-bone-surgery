@@ -44,7 +44,7 @@ const Nav = ({ openNav }: Props) => {
           {/* 로그인 */}
           <ButtonBlue link="/login" text="로그인" />
           {/* 회원가입 */}
-          <ButtonRed link="/signup" text="회원가입" />
+          <ButtonRed link="/register" text="회원가입" />
           <Bars3BottomRightIcon
             onClick={openNav}
             className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer"
