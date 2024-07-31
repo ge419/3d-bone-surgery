@@ -5,8 +5,8 @@ import ResponsiveNav from "../components/Navigation/ResponsiveNav";
 const HomePage = () => {
   return (
     <>
-      {/* <ResponsiveNav /> */}
-      <div className="text-9xl text-blue-900">
+      {/* className="text-9xl text-blue-900" */}
+      <div>
         <Home />
       </div>
     </>
