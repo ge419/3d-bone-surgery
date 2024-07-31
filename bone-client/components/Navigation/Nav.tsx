@@ -1,8 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
-import ButtonLogin from "../Button/ButtonLogin";
-import ButtonSignUp from "../Button/ButtonSignUp";
 import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";
+import ButtonBlue from "../Button/ButtonBlue";
+import ButtonRed from "../Button/ButtonRed";
 
 interface Props {
   openNav: () => void;
@@ -34,14 +36,15 @@ const Nav = ({ openNav }: Props) => {
             <Link href="/News">News</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/bone3">Blog</Link>{/* 외부링크 네이버 카페 예정*/}
+            <Link href="/bone3">Blog</Link>
+            {/* 외부링크 네이버 카페 예정*/}
           </li>
         </ul>
         <div className="flex items-center space-x-2 md:space-x-5">
           {/* 로그인 */}
-          <ButtonLogin text="로그인" />
+          <ButtonBlue link="/login" text="로그인" />
           {/* 회원가입 */}
-          <ButtonSignUp text="회원가입" />
+          <ButtonRed text="회원가입" />
           <Bars3BottomRightIcon
             onClick={openNav}
             className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer"
