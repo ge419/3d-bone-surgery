@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
-function Bone1() {
-  return <div>Bone1</div>;
+const ForPatients = () => {
+  return (
+    <div></div>
+  )
 }
 
-export default Bone1;
+export default ForPatients
