@@ -5,12 +5,46 @@ import React from "react";
 import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";
 import ButtonBlue from "../Button/ButtonBlue";
 import ButtonRed from "../Button/ButtonRed";
+import { useRouter } from "next/navigation";
+import { signOut, useSession } from "next-auth/react";
 
 interface Props {
   openNav: () => void;
 }
 
 const Nav = ({ openNav }: Props) => {
+  const { status } = useSession();
+  const router = useRouter();
+
+  const showSession = () => {
+    if (status === "authenticated") {
+      return (
+        // <ButtonBlue text={"로그아웃"} link={"/"} />
+        <button
+          className="border border-solid border-black rounded"
+          onClick={() => {
+            signOut({ redirect: false }).then(() => {
+              router.push("/");
+            });
+          }}
+        >
+          Sign Out
+        </button>
+      );
+    } else if (status === "loading") {
+      return <span className="text-[#888] text-sm mt-7">Loading...</span>;
+    } else {
+      return (
+        <Link
+          href="/login"
+          className="border border-solid border-black rounded"
+        >
+          Sign In
+        </Link>
+      );
+    }
+  };
+
   return (
     <div className="h-[12h] bg-white shadow-md">
       <div className="w-[85%] flex item-center justify-between mx-auto h-[12vh]">
@@ -42,6 +76,7 @@ const Nav = ({ openNav }: Props) => {
         </ul>
         <div className="flex items-center space-x-2 md:space-x-5">
           {/* 로그인 */}
+          {showSession()}
           <ButtonBlue link="/login" text="로그인" />
           {/* 회원가입 */}
           <ButtonRed link="/register" text="회원가입" />
