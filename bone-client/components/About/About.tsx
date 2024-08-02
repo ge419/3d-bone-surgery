@@ -85,7 +85,7 @@ const About = () => {
           <div className="mt-[1rem] w-[30%] mx-auto grid place-items-center">
               <Image src={BookAtlas} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
           </div>
-          <div className="flex grid place-items-center mt-[1rem]">
+          <div className="grid place-items-center mt-[1rem]">
             <ButtonBlue link="/" text="Find on Amazon"/>
           </div>
       </div>

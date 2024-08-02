@@ -1,8 +1,11 @@
+import Carousel from '@/components/Slick/Carousel'
 import React from 'react'
 
 const ForPatients = () => {
   return (
-    <div></div>
+    <div>
+      <Carousel/>
+    </div>
   )
 }
 
