@@ -2,8 +2,14 @@ import React from "react";
 import ButtonBlue from "../Button/ButtonBlue";
 import ButtonRed from "../Button/ButtonRed";
 import HeroImg from "@/public/images/hero.svg";
+import BookAtlas from "@/public/images/book_atlas.jpg";
 import Image from "next/image";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import Logo1 from "@/public/images/network/KNCC.png";
+import Logo2 from "@/public/images/network/3dprintkor.png";
+import Logo3 from "@/public/images/network/AAOS.png";
+import Logo4 from "@/public/images/network/orthokor.png";
+import Logo5 from "@/public/images/network/seouluniv.png";
 
 const About = () => {
   return (
@@ -47,9 +53,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mt-[12vh] flex items-center flex-col justify-center py-8">
-        {" "}
-        {/* Added py-8 */}
+      <div className="mt-[12vh] flex items-center flex-col justify-center py-8 ">
+        {/* bg-opacity-75 bg-research-pattern */}
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto gap-y-8">
           <div className="col-span-4">
             <h1 className="text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]">
@@ -58,19 +63,51 @@ const About = () => {
           </div>
           <div className="col-span-2">
             <p className="md:text-[21px] text-[19px] leading-[1.5rem] md:leading-[1.5rem] text-black opacity-90 font-[400]">
-              Professor Al Muderis has led research and contributed to over 40
-              scientific papers in the past 15 years.
+              Professor Hyun Guy Kang has led research and contributed to over 70
+              scientific papers in the past 20 years.
             </p>
-            <div className="flex items-center space-x-4 md:space-x-6 mt-[1rem]">
+            <div className="flex items-center space-x-4 md:space-x-6 mt-[2rem]">
               <ButtonBlue link="/" text="Learn More" />
             </div>
           </div>
         </div>
       </div>
-      <SectionHeading
-        headingMini="Ideal MJ"
-        headingPrimary="Books by Hyun Guy Kang"
-      />
+
+      <div>
+        <SectionHeading
+          headingMini="Books Books"
+          headingPrimary="Books by Hyun Guy Kang"
+        />
+          <p className="mt-[1rem] w-[30%] mx-auto grid place-items-center">
+          Clinical Atlas of 3D Printing Bone Reconstruction is Munjed’s extraordinary account
+           of his journey from the brutality of Saddam Hussein’s Iraq to a new life in Australia and a remarkable career at the forefront of medicine.
+          </p>
+          <div className="mt-[1rem] w-[30%] mx-auto grid place-items-center">
+              <Image src={BookAtlas} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
+          </div>
+          <div className="flex grid place-items-center mt-[1rem]">
+            <ButtonBlue link="/" text="Find on Amazon"/>
+          </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-5 items-center w-[55%] mx-auto gap-y-8 gap-x-20 mt-[2rem]">
+          <div className="col-span-1">
+            <Image src={Logo1} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
+          </div>
+          <div className="col-span-1">
+            <Image src={Logo2} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
+          </div>
+          <div className="col-span-1">
+            <Image src={Logo3} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
+          </div>
+          <div className="col-span-1">
+            <Image src={Logo4} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
+          </div>
+          <div className="col-span-1">
+            <Image src={Logo5} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
+          </div>
+      </div>
+
     </div>
   );
 };

@@ -86,7 +86,7 @@ const AboutBrief = () => {
               techniques.
             </p>
             <div className="flex items-center space-x-4 md:space-x-6 mt-[1rem]">
-              <ButtonBlue text="Learn More about Prof. Kangs work" />
+              <ButtonBlue text="Learn More about Prof. Kangs work" link="/about" />
             </div>
           </div>
           <div className="col-span-2 hidden sm:block mt-[2rem]">
