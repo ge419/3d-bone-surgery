@@ -1,8 +1,9 @@
+"use client";
+
 import React from "react";
 import Home from "../components/Home";
-import ResponsiveNav from "../components/Navigation/ResponsiveNav";
 
-const HomePage = () => {
+export default function HomePage() {
   return (
     <>
       {/* className="text-9xl text-blue-900" */}
@@ -11,6 +12,4 @@ const HomePage = () => {
       </div>
     </>
   );
-};
-
-export default HomePage;
+}

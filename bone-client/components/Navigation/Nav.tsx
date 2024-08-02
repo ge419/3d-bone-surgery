@@ -5,12 +5,33 @@ import React from "react";
 import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";
 import ButtonBlue from "../Button/ButtonBlue";
 import ButtonRed from "../Button/ButtonRed";
+import { useRouter } from "next/navigation";
+import { signOut, useSession } from "next-auth/react";
+import ButtonLogout from "../Button/ButtonLogout";
 
 interface Props {
   openNav: () => void;
 }
 
 const Nav = ({ openNav }: Props) => {
+  const { status } = useSession();
+  const router = useRouter();
+
+  const showSession = () => {
+    if (status === "authenticated") {
+      return <ButtonLogout text={"로그아웃"} />;
+    } else if (status === "loading") {
+      return <span className="text-[#888] text-sm mt-7">Loading...</span>;
+    } else {
+      return (
+        <>
+          <ButtonBlue link="/login" text="로그인" />
+          <ButtonRed link="/register" text="회원가입" />
+        </>
+      );
+    }
+  };
+
   return (
     <div className="h-[12h] bg-white shadow-md">
       <div className="w-[85%] flex item-center justify-between mx-auto h-[12vh]">
@@ -41,10 +62,7 @@ const Nav = ({ openNav }: Props) => {
           </li>
         </ul>
         <div className="flex items-center space-x-2 md:space-x-5">
-          {/* 로그인 */}
-          <ButtonBlue link="/login" text="로그인" />
-          {/* 회원가입 */}
-          <ButtonRed link="/signup" text="회원가입" />
+          {showSession()}
           <Bars3BottomRightIcon
             onClick={openNav}
             className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer"
