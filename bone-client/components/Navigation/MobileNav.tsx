@@ -35,6 +35,9 @@ const MobileNav = ({ nav, closeNav }: Props) => {
           <Link href="/news">News</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
+          <Link href="/contacts">Contacts</Link>
+        </li>
+        <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
           <Link href="/bone3">Blog</Link> {/* 외부링크 예정*/}
         </li>
       </ul>
