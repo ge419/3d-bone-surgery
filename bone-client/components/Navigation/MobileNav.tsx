@@ -29,7 +29,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
           <Link href="/ForPatients">For Patients</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
-          <Link href="/ForProfessional">For Professional</Link>
+          <Link href="/ForProfessionals">For Professionals</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
           <Link href="/News">News</Link>

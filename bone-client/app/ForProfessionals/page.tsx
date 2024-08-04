@@ -1,7 +1,7 @@
 import React from "react";
 
-function Bone2() {
-  return <div>Bone2</div>;
+function ForProfessionals() {
+  return <div>ForProfessionals</div>;
 }
 
-export default Bone2;
+export default ForProfessionals;

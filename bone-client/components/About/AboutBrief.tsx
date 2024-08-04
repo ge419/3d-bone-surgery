@@ -7,6 +7,8 @@ import FeatureCard from "../Features/FeatureCard";
 import Icon1 from "@/public/images/icon1.png";
 import Icon2 from "@/public/images/icon2.png";
 import Icon3 from "@/public/images/icon3.png";
+import ProfileImg from "@/public/images/profile/profile1.jpg";
+import ImplantImg from "@/public/images/3dimplant.png";
 
 const AboutBrief = () => {
   return (
@@ -28,7 +30,7 @@ const AboutBrief = () => {
               quality of life.
             </p>
             <div className="flex items-center space-x-4 md:space-x-6 mt-[1rem]">
-              <ButtonBlue text="Learn More" />
+              <ButtonBlue link="/" text="Learn More" />
             </div>
           </div>
         </div>
@@ -68,7 +70,7 @@ const AboutBrief = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto">
           <div className="col-span-2">
             <h1 className="text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]">
-              Professor Hyun Guy Kang
+              Professor Hyun-Guy Kang
             </h1>
             <p className="md:text-[17px] text-[15px] leading-[1.5rem] md:leading-[1.5rem] text-black opacity-90 font-[400]">
               Dr. Hyun-Guy Kang is a world-renowned expert in orthopedic
@@ -90,14 +92,14 @@ const AboutBrief = () => {
             </div>
           </div>
           <div className="col-span-2 hidden sm:block mt-[2rem]">
-            <Image src={HeroImg} alt="Hero" />
+            <Image src={ProfileImg} alt="profile" />
           </div>
         </div>
       </div>
       <div className="h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] flex items-center flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto">
           <div className="col-span-2 hidden sm:block mt-[2rem]">
-            <Image src={HeroImg} alt="Hero" />
+            <Image src={ImplantImg} alt="3d implant" />
           </div>
           <div className="col-span-2">
             <h1 className="text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]">
@@ -111,7 +113,7 @@ const AboutBrief = () => {
               optimise your rehabilitation and recovery.
             </p>
             <div className="flex items-center space-x-4 md:space-x-6 mt-[1rem]">
-              <ButtonBlue text="Learn More" />
+              <ButtonBlue link="/" text="Learn More" />
             </div>
           </div>
         </div>

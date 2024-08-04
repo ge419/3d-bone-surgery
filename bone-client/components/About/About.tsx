@@ -2,6 +2,7 @@ import React from "react";
 import ButtonBlue from "../Button/ButtonBlue";
 import ButtonRed from "../Button/ButtonRed";
 import HeroImg from "@/public/images/hero.svg";
+import ProfileImg from "@/public/images/profile/profile1.jpg";
 import BookAtlas from "@/public/images/book_atlas.jpg";
 import Image from "next/image";
 import SectionHeading from "../SectionHeading/SectionHeading";
@@ -18,12 +19,12 @@ const About = () => {
         {" "}
         {/* Changed h to min-h and added py-8 */}
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto gap-y-8">
-          <div className="col-span-2 hidden sm:block mt-[2rem]">
-            <Image src={HeroImg} alt="Hero" />
+          <div className="col-span-2 hidden sm:block m-auto">
+            <Image src={ProfileImg} alt="Dr Hyun Guy Kang" />
           </div>
           <div className="col-span-2">
             <h1 className="text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]">
-              Professor Hyun Guy Kang
+              Professor Hyun-Guy Kang
             </h1>
             <p className="md:text-[17px] text-[15px] leading-[1.5rem] md:leading-[1.5rem] text-black opacity-90 font-[400]">
               Dr. Hyun-Guy Kang is currently Head of the center for rare cancer
@@ -85,8 +86,8 @@ const About = () => {
           <div className="mt-[1rem] w-[30%] mx-auto grid place-items-center">
               <Image src={BookAtlas} alt="Clinical Atlas of 3D Printing Bone Reconstruction" />
           </div>
-          <div className="flex grid place-items-center mt-[1rem]">
-            <ButtonBlue link="/" text="Find on Amazon"/>
+          <div className="grid place-items-center mt-[1rem]">
+            <ButtonBlue link="https://link.springer.com/book/10.1007/978-981-16-2043-0" text="Find on Springer"/>
           </div>
       </div>
 
