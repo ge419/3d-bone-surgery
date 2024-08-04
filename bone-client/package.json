@@ -10,12 +10,9 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
-<<<<<<< HEAD
     "bcryptjs": "^2.4.3",
     "mongoose": "^8.5.2",
-=======
     "@types/react-slick": "^0.23.13",
->>>>>>> f0369109de65ab92f00893760f8f97336626e4c7
     "next": "14.2.5",
     "next-auth": "^5.0.0-beta.20",
     "react": "^18",

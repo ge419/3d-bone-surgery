@@ -47,6 +47,7 @@ const AboutBrief = () => {
               title="3D implant"
               image={Icon1.src}
               info="Designed 3d titatnium implant"
+              link="/implant"
             />
           </div>
           <div>
@@ -54,6 +55,7 @@ const AboutBrief = () => {
               title="Oncology"
               image={Icon2.src}
               info="more than 1000 cases"
+              link="/oncology"
             />
           </div>
           <div>
@@ -61,6 +63,7 @@ const AboutBrief = () => {
               title="Amputation"
               image={Icon3.src}
               info="FDA approved amputation design"
+              link="/amputation"
             />
           </div>
         </div>
@@ -88,7 +91,10 @@ const AboutBrief = () => {
               techniques.
             </p>
             <div className="flex items-center space-x-4 md:space-x-6 mt-[1rem]">
-              <ButtonBlue text="Learn More about Prof. Kangs work" link="/about" />
+              <ButtonBlue
+                text="Learn More about Prof. Kangs work"
+                link="/about"
+              />
             </div>
           </div>
           <div className="col-span-2 hidden sm:block mt-[2rem]">

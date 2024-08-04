@@ -48,10 +48,10 @@ const Nav = ({ openNav }: Props) => {
             <Link href="/about">About</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/ForPatients">For Patients</Link>
+            <Link href="/forPatients">For Patients</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/ForProfessionals">For Professionals</Link>
+            <Link href="/forProfessionals">For Professionals</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
             <Link href="/news">News</Link>
