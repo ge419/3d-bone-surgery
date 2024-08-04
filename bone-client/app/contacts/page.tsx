@@ -84,7 +84,7 @@ const Contacts = () => {
             title="Send X-Ray"
             image={Icon2.src}
             info="more than 1000 cases"
-            link="/about/oncology"
+            link="/contacts/sendForm"
           />
         </div>
         <div>
