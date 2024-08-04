@@ -10,12 +10,14 @@ import { signOut, useSession } from "next-auth/react";
 import ButtonLogout from "../Button/ButtonLogout";
 import Dropdown from "./Dropdown";
 import LanguageSwitcher from "../I18n/LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 interface Props {
   openNav: () => void;
 }
 
 const Nav = ({ openNav }: Props) => {
+  const t = useTranslations("Navigation");
   const { status } = useSession();
   const router = useRouter();
 
@@ -27,7 +29,7 @@ const Nav = ({ openNav }: Props) => {
     } else {
       return (
         <>
-          <ButtonBlue link="/login" text="로그인" />
+          <ButtonBlue link="/login" text={t("login")} />
           {/* <ButtonRed link="/register" text="회원가입" /> */}
         </>
       );
@@ -50,23 +52,23 @@ const Nav = ({ openNav }: Props) => {
         <ul className="hidden lg:flex items-center space-x-10">
           {/* Modify list items as required */}
           <li className="text-[17px] cursor-pointer text-blue-500">
-            <Link href="/">Home</Link>
+            <Link href="/">{t("home")}</Link>
           </li>
           <li className="text-[17px] cursor-pointer">
             {/* <Link href="/about">About</Link> */}
             <Dropdown title="About" items={aboutItems} />
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/forPatients">For Patients</Link>
+            <Link href="/forPatients">{t("forPatients")}</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/forProfessionals">For Professionals</Link>
+            <Link href="/forProfessionals">{t("forProfessionals")}</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/news">News</Link>
+            <Link href="/news">{t("news")}</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/">Blog</Link>
+            <Link href="/">{t("blog")}</Link>
             {/* 임시로 홈페이지로 routing, 외부링크 네이버 카페 예정*/}
           </li>
         </ul>

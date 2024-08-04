@@ -1,5 +1,11 @@
 {
-  "HomePage": {
-    "title": "안녕하세요!"
+  "Navigation": {
+    "home": "홈",
+    "about": "소개",
+    "forPatients": "환자용",
+    "forProfessionals": "전문가용",
+    "news": "뉴스",
+    "blog": "블로그",
+    "login": "로그인"
   }
 }
