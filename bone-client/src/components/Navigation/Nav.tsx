@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 import ButtonLogout from "../Button/ButtonLogout";
 import Dropdown from "./Dropdown";
+import LanguageSwitcher from "../I18n/LanguageSwitcher";
 
 interface Props {
   openNav: () => void;
@@ -27,7 +28,7 @@ const Nav = ({ openNav }: Props) => {
       return (
         <>
           <ButtonBlue link="/login" text="로그인" />
-          <ButtonRed link="/register" text="회원가입" />
+          {/* <ButtonRed link="/register" text="회원가입" /> */}
         </>
       );
     }
@@ -75,6 +76,9 @@ const Nav = ({ openNav }: Props) => {
             onClick={openNav}
             className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer"
           />
+        </div>
+        <div className="flex items-center">
+          <LanguageSwitcher />
         </div>
       </div>
     </div>

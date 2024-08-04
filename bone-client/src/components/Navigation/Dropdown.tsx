@@ -44,7 +44,7 @@ const Dropdown = ({ title, items }: DropdownProps) => {
       document.removeEventListener("mousedown", handleClickOutside);
       clearTimeout(closeTimeout);
     };
-  }, []);
+  });
 
   return (
     <div
