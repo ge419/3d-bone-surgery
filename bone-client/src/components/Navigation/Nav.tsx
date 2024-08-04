@@ -10,7 +10,9 @@ import { signOut, useSession } from "next-auth/react";
 import ButtonLogout from "../Button/ButtonLogout";
 import Dropdown from "./Dropdown";
 import LanguageSwitcher from "../I18n/LanguageSwitcher";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import LocaleSwitcher from "../I18n/LocaleSwitcher";
+import { Locale } from "@/src/i18n.config";
 
 interface Props {
   openNav: () => void;
@@ -20,6 +22,7 @@ const Nav = ({ openNav }: Props) => {
   const t = useTranslations("Navigation");
   const { status } = useSession();
   const router = useRouter();
+  const locale = useLocale() as Locale;
 
   const showSession = () => {
     if (status === "authenticated") {
@@ -56,7 +59,7 @@ const Nav = ({ openNav }: Props) => {
           </li>
           <li className="text-[17px] cursor-pointer">
             {/* <Link href="/about">About</Link> */}
-            <Dropdown title="About" items={aboutItems} />
+            <Dropdown title={t("about")} items={aboutItems} />
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
             <Link href="/forPatients">{t("forPatients")}</Link>
@@ -81,6 +84,7 @@ const Nav = ({ openNav }: Props) => {
         </div>
         <div className="flex items-center">
           <LanguageSwitcher />
+          {/* <LocaleSwitcher locale={locale} /> */}
         </div>
       </div>
     </div>

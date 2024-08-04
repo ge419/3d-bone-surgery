@@ -30,14 +30,14 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <Provider>
-        <NextIntlClientProvider messages={messages}>
+      <NextIntlClientProvider messages={messages}>
+        <Provider>
           <body className={poppins.className}>
             <ResponsiveNav />
             {children}
           </body>
-        </NextIntlClientProvider>
-      </Provider>
+        </Provider>
+      </NextIntlClientProvider>
     </html>
   );
 }
