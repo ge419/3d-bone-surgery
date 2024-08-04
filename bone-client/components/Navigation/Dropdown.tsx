@@ -31,7 +31,7 @@ const Dropdown = ({ title, items }: DropdownProps) => {
   const handleMouseLeave = () => {
     closeTimeout = setTimeout(() => {
       closeDropdown();
-    }, 2000); // Adjust the delay time (in milliseconds) as needed
+    }, 2000);
   };
 
   const handleMouseEnter = () => {
