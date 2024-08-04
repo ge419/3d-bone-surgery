@@ -5,10 +5,7 @@ export interface UserDocument {
   email: string;
   password: string;
   name: string;
-  // phone: string;
-  // image: string;
-  // createdAt: Date;
-  // updatedAt: Date;
+  role: "admin" | "user";
 }
 
 const UserSchema = new Schema<UserDocument>(
@@ -29,6 +26,12 @@ const UserSchema = new Schema<UserDocument>(
     name: {
       type: String,
       required: [true, "Name is required"],
+    },
+    role: {
+      type: String,
+      enum: ["admin", "user"],
+      required: true,
+      default: "user",
     },
   },
   {
