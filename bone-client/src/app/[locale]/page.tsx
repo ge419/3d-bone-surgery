@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import Home from "../components/Home";
+import Home from "../../components/Home";
+import { useTranslations } from "next-intl";
 
 export default function HomePage() {
   return (
