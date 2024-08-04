@@ -1,4 +1,11 @@
+"use client";
+
+import FeatureCard from "@/components/Features/FeatureCard";
 import React from "react";
+
+import Icon1 from "@/public/images/icon1.png";
+import Icon2 from "@/public/images/icon2.png";
+import Icon3 from "@/public/images/icon3.png";
 
 const Contacts = () => {
   return (
@@ -61,6 +68,32 @@ const Contacts = () => {
               <strong>Email:</strong> ostumor@hanmail.net
             </p>
           </div>
+        </div>
+      </div>
+      <div className="pt-[3rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[1.4rem]">
+        <div>
+          <FeatureCard
+            title="Patient Inquiry"
+            image={Icon1.src}
+            info="Designed 3d titatnium implant"
+            link="/contacts/patientInquiry"
+          />
+        </div>
+        <div>
+          <FeatureCard
+            title="Send X-Ray"
+            image={Icon2.src}
+            info="more than 1000 cases"
+            link="/about/oncology"
+          />
+        </div>
+        <div>
+          <FeatureCard
+            title="Amputation"
+            image={Icon3.src}
+            info="FDA approved amputation design"
+            link="/about/amputation"
+          />
         </div>
       </div>
     </div>

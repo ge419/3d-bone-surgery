@@ -28,9 +28,6 @@ const FeatureCard = ({ title, image, info, link }: Props) => {
         {" "}
         {info}
       </p>
-      {/* <p className="mt-[1.4rem] text-[15px] text-red-600 font-[500] cursor-pointer hover:text-red-800">
-        Learn More
-      </p> */}
       <Link
         className="mt-[1.4rem] text-[15px] text-red-600 font-[500] cursor-pointer hover:text-red-800"
         href={`/${link}`}
