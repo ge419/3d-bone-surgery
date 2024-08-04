@@ -1,12 +1,14 @@
 import { connectDB } from "@/lib/mongodb";
 import User from "@/models/User";
-import type { NextAuthOptions } from "next-auth";
+// import type { NextAuthOptions } from "next-auth";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
+import { MongoDBAdapter } from "@auth/mongodb-adapter";
+import client from "@/lib/mongodb";
 
 export const { auth, handlers, signIn, signOut } = NextAuth({
-  // adapter:
+  adapter: MongoDBAdapter(client),
   providers: [
     Credentials({
       name: "Credentials",
@@ -33,6 +35,7 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
 
         const userRole = user.email === "ge419@naver.com" ? "admin" : "user";
         user.role = userRole;
+        // const role = user.role || "user";
 
         return {
           id: user._id,
@@ -44,12 +47,23 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
     }),
   ],
   callbacks: {
-    session({ session, user }) {
-      session.user.role = user.role;
+    async jwt({ token, user }) {
+      // Attach the role to the JWT token
+      if (user) {
+        token.role = user.role as String;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      // Attach the role to the session object
+      // if (session?.user) session.user.role = token.role;
+      if (session?.user && token) {
+        (token.role as string) ?? "user";
+      }
       return session;
     },
   },
-  session: {
-    strategy: "jwt",
-  },
+  // session: {
+  //   strategy: "jwt",
+  // },
 });

@@ -27,7 +27,7 @@ const Nav = ({ openNav }: Props) => {
       return (
         <>
           <ButtonBlue link="/login" text="로그인" />
-          <ButtonRed link="/register" text="회원가입" />
+          {/* <ButtonRed link="/register" text="회원가입" /> */}
         </>
       );
     }
