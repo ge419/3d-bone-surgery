@@ -9,8 +9,10 @@ const SendForm = () => {
     lastName: "",
     email: "",
     phone: "",
-    country: "",
-    address: "",
+    street: "",
+    city: "",
+    state: "",
+    postalCode: "",
     dateOfBirth: "",
     additionalInfo: "",
   });
@@ -44,8 +46,10 @@ const SendForm = () => {
     formData.append("lastName", formState.lastName);
     formData.append("email", formState.email);
     formData.append("phone", formState.phone);
-    formData.append("country", formState.country);
-    formData.append("address", formState.address);
+    formData.append("street", formState.street);
+    formData.append("city", formState.city);
+    formData.append("state", formState.state);
+    formData.append("postalCode", formState.postalCode);
     formData.append("dateOfBirth", formState.dateOfBirth);
     formData.append("additionalInfo", formState.additionalInfo);
     formData.append("file", selectedFile);
@@ -143,19 +147,37 @@ const SendForm = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div className="mb-6">
+            <label
+              htmlFor="street"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Street
+            </label>
+            <input
+              type="text"
+              id="street"
+              name="street"
+              value={formState.street}
+              onChange={handleInputChange}
+              required
+              className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             <div>
               <label
-                htmlFor="country"
+                htmlFor="city"
                 className="block text-sm font-medium text-gray-700"
               >
-                Country
+                City
               </label>
               <input
                 type="text"
-                id="country"
-                name="country"
-                value={formState.country}
+                id="city"
+                name="city"
+                value={formState.city}
                 onChange={handleInputChange}
                 required
                 className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
@@ -163,16 +185,33 @@ const SendForm = () => {
             </div>
             <div>
               <label
-                htmlFor="address"
+                htmlFor="state"
                 className="block text-sm font-medium text-gray-700"
               >
-                Address
+                State
               </label>
               <input
                 type="text"
-                id="address"
-                name="address"
-                value={formState.address}
+                id="state"
+                name="state"
+                value={formState.state}
+                onChange={handleInputChange}
+                required
+                className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="postalCode"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Postal Code
+              </label>
+              <input
+                type="text"
+                id="postalCode"
+                name="postalCode"
+                value={formState.postalCode}
                 onChange={handleInputChange}
                 required
                 className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
