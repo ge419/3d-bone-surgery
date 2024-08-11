@@ -10,7 +10,7 @@ import BoneMap from "@/components/BoneMap/BoneMap";
 
 function Implant() {
   return <div>
-    <div className="mt-[12vh] flex items-center flex-col justify-center py-8">
+    <div className="mt-[12vh] flex items-center flex-col justify-center py-8  bg-teal-500">
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center w-[80%] mx-auto">
           <div className="col-span-2">
             <h1 className="text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]">
