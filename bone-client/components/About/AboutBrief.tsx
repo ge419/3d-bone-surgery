@@ -4,9 +4,9 @@ import Image from "next/image";
 import HeroImg from "@/public/images/hero.svg";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import FeatureCard from "../Features/FeatureCard";
-import Icon1 from "@/public/images/icon1.png";
-import Icon2 from "@/public/images/icon2.png";
-import Icon3 from "@/public/images/icon3.png";
+import Icon1 from "@/public/images/bone.png";
+import Icon2 from "@/public/images/cancer.png";
+import Icon3 from "@/public/images/amputation.png";
 import ProfileImg from "@/public/images/profile/profile1.jpg";
 import ImplantImg from "@/public/images/3dimplant.png";
 

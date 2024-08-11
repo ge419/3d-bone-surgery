@@ -2,8 +2,10 @@ import ButtonBlue from "@/components/Button/ButtonBlue";
 import Carousel from "@/components/Slick/Carousel";
 import Image from "next/image";
 import React from "react";
-import ProfileImg from "@/public/images/profile/profile1.jpg";
+import ProfileImg from "@/public/images/profile/profile3.jpg";
+import ProfileImg2 from "@/public/images/profile/profile4.png";
 import SkeletonImg from "@/public/images/skeleton.jpg";
+import BoneMap from "@/components/BoneMap/BoneMap";
 
 
 function Implant() {
@@ -51,24 +53,14 @@ function Implant() {
             </div>
           </div>
           <div className="col-span-2 hidden sm:block mt-[2rem]">
-            <Image src={ProfileImg} alt="profile" />
+            <Image src={ProfileImg2} alt="profile" />
           </div>
         </div>
     </div>
     <h1 className='text-center mt-[2rem] font-bold text-[22px] md:text-[30px] text-[#02073e]'>Process of 3D Implant Surgery</h1>
     <Carousel/>
 
-    <div className="mt-[2rem] relative">
-      <Image src={SkeletonImg} alt='skeleton'/>
-      <button
-          style={{position: "absolute", top: "150px", left: "150px",}}
-          className="rounded-md px-4 py-1 text-[15px] md:px-8 md:py-2.5 overflow-hidden group 
-    bg-blue-500 relative hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-400 text-white hover:ring-2
-    hover:ring-offset-2 hover:ring-blue-400 transition-all ease-out duration-300"
-        >
-          femur
-        </button>
-    </div>
+    <BoneMap/>
   </div>;
 }
 
