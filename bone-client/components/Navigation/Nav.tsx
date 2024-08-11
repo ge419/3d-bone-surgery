@@ -8,6 +8,7 @@ import ButtonRed from "../Button/ButtonRed";
 import { useRouter } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 import ButtonLogout from "../Button/ButtonLogout";
+import Dropdown from "./Dropdown";
 
 interface Props {
   openNav: () => void;
@@ -32,6 +33,12 @@ const Nav = ({ openNav }: Props) => {
     }
   };
 
+  const aboutItems = [
+    { label: "Amputation", link: "/about/amputation" },
+    { label: "Implant", link: "/about/implant" },
+    { label: "Oncology", link: "/about/oncology" },
+  ];
+
   return (
     <div className="h-[12h] bg-white shadow-md">
       <div className="w-[85%] flex item-center justify-between mx-auto h-[12vh]">
@@ -44,8 +51,9 @@ const Nav = ({ openNav }: Props) => {
           <li className="text-[17px] cursor-pointer text-blue-500">
             <Link href="/">Home</Link>
           </li>
-          <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/about">About</Link>
+          <li className="text-[17px] cursor-pointer">
+            {/* <Link href="/about">About</Link> */}
+            <Dropdown title="About" items={aboutItems} />
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
             <Link href="/ForPatients">For Patients</Link>
