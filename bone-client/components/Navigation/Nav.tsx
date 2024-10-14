@@ -65,6 +65,9 @@ const Nav = ({ openNav }: Props) => {
             <Link href="/News">News</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
+            <Link href="/contacts">Contacts</Link>
+          </li>
+          <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
             <Link href="/">Blog</Link>
             {/* 임시로 홈페이지로 routing, 외부링크 네이버 카페 예정*/}
           </li>

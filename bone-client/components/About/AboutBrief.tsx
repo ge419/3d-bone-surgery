@@ -47,7 +47,7 @@ const AboutBrief = () => {
               title="3D implant"
               image={Icon1.src}
               info="Designed 3d titatnium implant"
-              link="/implant"
+              link="/about/implant"
             />
           </div>
           <div>
@@ -55,7 +55,7 @@ const AboutBrief = () => {
               title="Oncology"
               image={Icon2.src}
               info="more than 1000 cases"
-              link="/oncology"
+              link="/about/oncology"
             />
           </div>
           <div>
@@ -63,7 +63,7 @@ const AboutBrief = () => {
               title="Amputation"
               image={Icon3.src}
               info="FDA approved amputation design"
-              link="/amputation"
+              link="/about/amputation"
             />
           </div>
         </div>

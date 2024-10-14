@@ -1,3 +1,9 @@
+2024-08-11
+1) 이메일 기능해서 patient page 밑에, professional page에 넣으면 될 듯
+2) news page
+3) blog는 아직 그냥 나두고
+4) 페이지 이쁘게 만들기 전에 아빠한테 웹사이트 캡쳐 보내서 넣을 내용 작성 및 사진 보내달라고 하고
+
 TO DO:
 
 1. 로그인과 데이터베이스
@@ -6,7 +12,6 @@ TO DO:
 4. 이메일 기능, 파일 업로드도 가능하게
 5. 유트브 embeding?
 6. 네비게이션
-7. 3d rendering images https://www.youtube.com/watch?app=desktop&v=wxvSHOrBHbw
 
 almuderis.com.au
 참고해서 자기소개 페이지
@@ -16,7 +21,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Site Map
 1) Home (About 간단하게 연결되도록, News 업데이트 보이게, 간략하게 맨 밑에 for patient for professional inquery 버튼)
 2) About - dr hyun guy kang (CV, 업적, 논문, 보도자료 페이지)
-      - Orthopedics Oncology (암 수술 장면, 요약 등 페이지)
       - 3d bone implant (3d 임플란트 페이지 3d rendering 써볼 예정)
           - patient와 doctor를 위한 email 의뢰 inquery 페이지
       - Amputation? (사진과 설명, 특허 정도)
