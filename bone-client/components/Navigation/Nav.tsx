@@ -56,13 +56,13 @@ const Nav = ({ openNav }: Props) => {
             <Dropdown title="About" items={aboutItems} />
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/forPatients">For Patients</Link>
+            <Link href="/ForPatients">For Patients</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/forProfessionals">For Professionals</Link>
+            <Link href="/ForProfessionals">For Professionals</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
-            <Link href="/news">News</Link>
+            <Link href="/News">News</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-blue-500 transition-all duration-200">
             <Link href="/contacts">Contacts</Link>

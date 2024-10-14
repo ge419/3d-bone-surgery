@@ -26,15 +26,16 @@ const MobileNav = ({ nav, closeNav }: Props) => {
           <Link href="/about">About</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
-          <Link href="/forPatients">For Patients</Link>
+          <Link href="/ForPatients">For Patients</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
-          <Link href="/forProfessionals">For Professionals</Link>
+          <Link href="/ForProfessionals">For Professionals</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
-          <Link href="/news">News</Link>
+          <Link href="/News">News</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
+          <Link href="/">Blog</Link> {/* 외부링크 예정*/}
           <Link href="/contacts">Contacts</Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
